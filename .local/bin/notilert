@@ -1,0 +1,5 @@
+#!/bin/sh
+
+
+## Retro
+paplay /home/hackerW1/.local/sounds/notification.ogg
