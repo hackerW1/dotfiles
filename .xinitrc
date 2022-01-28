@@ -10,5 +10,5 @@ dunst &
 wal -Rq &
 picom &
 #exec dwm 
-#dwmblocks &
+/home/hackerW1/.local/bin/dwm_bar &
 while type dwm >/dev/null ; do dwm && continue || break ; done
