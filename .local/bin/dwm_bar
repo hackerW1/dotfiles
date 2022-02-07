@@ -58,10 +58,14 @@ do
 		## [ $((sec % n)) -eq m ] && udpate_item
 		[ $((sec % 5 )) -eq 0 ] && update_time
 		[ $((sec % 15)) -eq 0 ] && update_memory
-		[ $((sec % 60 )) -eq 0 ] && update_bat
+		[ $((sec % 5 )) -eq 0 ] && update_bat
 
 		# how often the display updates ( 5 seconds )
 		[ $((sec % 5 )) -eq 0 ] && display
 		sec=$((sec + 1))
 	}
+	
+	if [$bat_capacity = 10]; then
+		notify-send --urgency=critical "PLUG IN THE CHARGER"
+	fi
 done 

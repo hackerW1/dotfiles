@@ -1,0 +1,5 @@
+#!/bin/sh
+
+paplay "/home/hackerW1/.local/sounds/shutter.ogg" &
+maim "$HOME/Pictures/Screenshot_$(date +%s).png"
+

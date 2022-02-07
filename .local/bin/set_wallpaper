@@ -17,6 +17,7 @@ wal -c
 wal -q -i ~/.local/share/bg.jpg
 sed -i 'N;$!P;D' $HOME/.cache/wal/colors-wal-dwm.h
 (cd $HOME/.local/src/dwm/ && sudo make clean install>/dev/null)
+(cd $HOME/.local/src/dmenu/ && sudo make clean install>/dev/null)
 #xdotool key super+F5
 #$HOME/.local/src/wal-telegram/wal-telegram
 #pywal-discord

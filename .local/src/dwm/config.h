@@ -5,13 +5,13 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrains Mono:size=11" };
+static const char *fonts[]          = { "JetBrains Mono:size=11", "NotoFonts Mono:size=11" };
 static const char dmenufont[]       = "JetBrains Mono:size=11";
 
 #include "/home/hackerW1/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
-static const char *tags[] = { ">_", "www", "|M|", "UwU", "mUSic", "sTUDY" };
+static const char *tags[] = { ">_", "www", "❤", "♪", "</>", "[-_-]" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -57,6 +57,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
+	{ 0,                            XK_Print,  spawn,          SHCMD("/home/hackerW1/.local/bin/schot") },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },

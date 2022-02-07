@@ -1,0 +1,4 @@
+#!/bin/sh
+
+notify-send "RECORDING STARTED.."
+ffmpeg -f x11grab -i :0.0 -f alsa -ac 2 -i default "$HOME/Videos/Yt-Channel/Recording_$(date +%s).mkv"

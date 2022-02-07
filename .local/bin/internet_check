@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# AUTHOR: hackerW1 #
+
+byte=$(ping -c 2 google.com | grep -o "64" | head -n 1)
+
+if [ $byte = "64" ]; then
+	notify-send "INTERNET IS WORKING FINE"
+else
+	notify-send "INTERNET IS NOT CONNECTED"
+fi

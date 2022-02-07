@@ -93,6 +93,8 @@ alias la='ls -A'
 alias l='ls -CF'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/Desktop/dotfiles/ --work-tree=$HOME'
 alias tclock='tty-clock -cS'
+alias encr='openssl enc -aes-256-cbc -in'
+alias decr='openssl enc -d -aes-256-cbc -in'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
