@@ -5,7 +5,7 @@
 # global xinitrc file, used by all X sessions started by xinit (startx)
 
 # invoke global X session script
-clear
+#clear
 
 # You should remember
 #echo " "
@@ -16,21 +16,24 @@ clear
 #echo "|    |___ |___ |  | ___] |___    |___ |  | |  | | \| |__] |___ "
 #echo "                                                               "
 
-shutdown -P 00:00 &
+#shutdown -P 00:00 &
 
-time=$(date +%H%M)
-if [ $time -gt 2350 ] || [ $time -lt 450 ]; then
-	shutdown now
-fi
+#day=$(time +%d)
+#time=$(date +%H%M)
+
+#if [ $day -lt 20 ]; then
+#	shutdown now
+#fi
+
+#if [ $time -gt 1830 ] || [ $time -lt 1650 ]; then
+#	shutdown now
+#fi
 
 dunst &
-#setbg &
 wal -Rq &
 picom &
-#exec dwm
 /home/hackerW1/.local/bin/dwm_bar &
-xrandr --output eDP --brightness 1
-xgamma -gamma 1
-#change_maker &
+#xrandr --output eDP --brightness 1
+#xgamma -gamma 1
 exec dwm >/dev/null
 
