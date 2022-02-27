@@ -5,17 +5,6 @@
 # global xinitrc file, used by all X sessions started by xinit (startx)
 
 # invoke global X session script
-#clear
-
-# You should remember
-#echo " "
-#echo "I think I'll be someone else on morning!"
-
-#echo "___  _    ____ ____ ____ ____    ____ _  _ ____ _  _ ____ ____ "
-#echo "|__] |    |___ |__| [__  |___    |    |__| |__| |\ | | __ |___ "
-#echo "|    |___ |___ |  | ___] |___    |___ |  | |  | | \| |__] |___ "
-#echo "                                                               "
-
 #shutdown -P 00:00 &
 
 #day=$(time +%d)
