@@ -33,6 +33,7 @@ dunst &
 wal -Rq &
 picom &
 /home/hackerW1/.local/bin/dwm_bar &
+xdotool key super+F5
 #xrandr --output eDP --brightness 1
 #xgamma -gamma 1
 exec dwm >/dev/null
