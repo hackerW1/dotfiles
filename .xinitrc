@@ -1,11 +1,10 @@
 #!/bin/sh
 
 dunst &
-wal -Rq &
+/home/hackerW1/.local/bin/wal -Rq &
 unclutter &
+sxhkd &
 picom &
 /home/hackerW1/.local/bin/dwm_bar &
-#xrandr --output eDP --brightness 1
-#xgamma -gamma 1
-xdotool key super+F5 &
+xwallpaper --zoom /home/hackerW1/.local/share/bg.jpg
 exec dwm > /dev/null 2>&1 
