@@ -95,6 +95,7 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/Desktop/dotfiles/ --work-tree=$HOME
 alias tclock='tty-clock -cS'
 alias encr='openssl enc -aes-256-cbc -in'
 alias decr='openssl enc -d -aes-256-cbc -in'
+alias vim='/usr/bin/nvim'
 alias disappear='sudo openvpn --config /home/hackerW1/Desktop/sh1t_f1les/protonvpn.ovpn'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,7 +122,7 @@ if ! shopt -oq posix; then
 fi
 
 # Some Exportation
-export PATH=$HOME/.local/bin:$PATH
+export PATH="/home/hackerW1/.local/bin:$PATH"
 
 # MyConfig
 
